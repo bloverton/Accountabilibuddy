@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import java.sql.*;
 
 public class LoginScreen extends Application {
 
@@ -20,5 +21,6 @@ public class LoginScreen extends Application {
         primaryStage.setTitle("Accountabilibuddy");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
+
     }
 }
