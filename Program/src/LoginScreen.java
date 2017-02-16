@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 
 public class LoginScreen extends Application {
 
-    public static void main(String[] args) {
+    public static void init(String[] args) {
         launch(args);
     }
 
