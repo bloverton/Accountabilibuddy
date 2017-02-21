@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a9d44d8-0ef3-4571-abdd-e889ee4931e7" name="Default" comment="Minor Changes to view layout">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Program/src/Controllers/LoginScreenController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Program/src/LoginScreen.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Program/src/LoginScreenView.fxml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Program/out/production/Accountabilibuddys/accountabilibuddy/view/LoginScreenController.class" afterPath="$PROJECT_DIR$/Program/out/production/Accountabilibuddys/accountabilibuddy/view/LoginScreenController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Program/out/production/Accountabilibuddys/accountabilibuddy/view/LoginScreenView.fxml" afterPath="$PROJECT_DIR$/Program/out/production/Accountabilibuddys/accountabilibuddy/view/LoginScreenView.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Program/out/production/Accountabilibuddys/accountabilibuddy/view/RootLayoutView.fxml" afterPath="$PROJECT_DIR$/Program/out/production/Accountabilibuddys/accountabilibuddy/view/RootLayoutView.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Program/src/accountabilibuddy/view/LoginScreenController.java" afterPath="$PROJECT_DIR$/Program/src/accountabilibuddy/view/LoginScreenController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Program/src/accountabilibuddy/view/LoginScreenView.fxml" afterPath="$PROJECT_DIR$/Program/src/accountabilibuddy/view/LoginScreenView.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Program/src/accountabilibuddy/view/RootLayoutView.fxml" afterPath="$PROJECT_DIR$/Program/src/accountabilibuddy/view/RootLayoutView.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <ignored path="$PROJECT_DIR$/Program/out/" />
@@ -618,7 +609,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487265308890</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Minor Changes to view layout">
+      <created>1487694808529</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1487694808529</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
