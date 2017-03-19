@@ -5,11 +5,11 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="accountabilibuddy.view.RootLayoutController">
+<BorderPane prefHeight="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="accountabilibuddy.view.RootLayoutController">
    <top>
       <HBox alignment="TOP_CENTER" prefHeight="20.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <HBox>
+            <HBox alignment="CENTER_RIGHT">
                <children>
                   <MenuBar>
                     <menus>
@@ -29,20 +29,11 @@
                         </items>
                       </Menu>
                     </menus>
-                     <opaqueInsets>
-                        <Insets />
-                     </opaqueInsets>
-                     <HBox.margin>
-                        <Insets right="161.0" />
-                     </HBox.margin>
                   </MenuBar>
-               </children>
-            </HBox>
-            <HBox alignment="TOP_RIGHT">
-               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0" />
                   <TextField promptText="Search">
                      <HBox.margin>
-                        <Insets left="161.0" />
+                        <Insets />
                      </HBox.margin>
                   </TextField>
                </children>

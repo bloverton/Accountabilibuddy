@@ -1,26 +1,36 @@
 package accountabilibuddy.view;
 
-import accountabilibuddy.Main;
+import accountabilibuddy.util.DatabaseConnection;
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
+import yahoofinance.Stock;
+import yahoofinance.YahooFinance;
+
 import java.io.IOException;
 
-/**
- * Created by overt on 2/15/2017.
- */
 public class LoginScreenController {
 
     @FXML
-    private Button btnSignUp;
+    private Button btnLogIn;
 
     @FXML
-    private Button btnLogIn;
+    private TextField txtUsernameField;
+
+    @FXML
+    private PasswordField txtPasswordField;
+
+    @FXML
+    private Label statusLabel;
 
     private Stage stage;
 
@@ -37,13 +47,27 @@ public class LoginScreenController {
         stage.setScene(scene);
         stage.setResizable(true);
 
-        //Load Stock Exchange scene to center of root scene
+        //Places Stock Exchange View to center of Root Layout
         AnchorPane stockExchange = FXMLLoader.load(getClass().getResource("StockExchangeView.fxml"));
         root.setCenter(stockExchange);
+
+        Stock stock = YahooFinance.get("^IXIC");
+
+        stock.print();
     }
 
     @FXML
-    private void onClickSignUp(){
+    private void onClickSignUp() throws IOException{
+        String username = txtUsernameField.getText();
+        String password = txtPasswordField.getText();
 
+        DatabaseConnection dbConnection = new DatabaseConnection("C:/");
+        dbConnection.connect();
+        if(dbConnection.isValidUsername("", "", username)){
+            dbConnection.insertUser("", username, password);
+        }else{
+            statusLabel.setText("That username has been taken already");
+        }
     }
+
 }
