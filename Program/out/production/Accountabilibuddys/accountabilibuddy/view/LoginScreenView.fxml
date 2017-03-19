@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.geometry.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
@@ -7,9 +9,29 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="accountabilibuddy.view.LoginScreenController">
    <children>
-      <VBox layoutX="125.0" layoutY="184.0" prefHeight="116.0" prefWidth="351.0" AnchorPane.bottomAnchor="100.0" AnchorPane.topAnchor="184.0">
+      <VBox alignment="CENTER" layoutX="125.0" layoutY="123.0" prefHeight="155.0" prefWidth="351.0" AnchorPane.bottomAnchor="122.0" AnchorPane.topAnchor="123.0">
          <children>
-            <TextField fx:id="txtUsernameFiled" promptText="Username">
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="87.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true" />
+                  <GridPane>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label ellipsisString="" prefHeight="34.0" prefWidth="290.0" text="Accountabilibuddy" textAlignment="CENTER">
+                           <font>
+                              <Font name="Calibri" size="34.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <TextField fx:id="txtUsernameField" promptText="Username">
                <VBox.margin>
                   <Insets bottom="20.0" />
                </VBox.margin>
@@ -21,21 +43,29 @@
             </PasswordField>
             <HBox alignment="TOP_RIGHT">
                <children>
-                  <CheckBox fx:id="checkRemember" mnemonicParsing="false" prefHeight="25.0" prefWidth="124.0" text="Remember Me">
+                  <Button fx:id="btnSignUp" mnemonicParsing="false" onAction="#onClickSignUp" prefHeight="25.0" prefWidth="181.0" text="Sign Up">
                      <HBox.margin>
-                        <Insets right="50.0" />
-                     </HBox.margin>
-                  </CheckBox>
-                  <Button fx:id="btnSignUp" mnemonicParsing="false" onAction="#onClickSignUp" text="Sign Up">
-                     <HBox.margin>
-                        <Insets left="50.0" right="10.0" />
+                        <Insets right="10.0" />
                      </HBox.margin>
                   </Button>
-                  <Button fx:id="btnLogIn" mnemonicParsing="false" onAction="#onClickLogIn" text="Log In">
+                  <Button fx:id="btnLogIn" mnemonicParsing="false" onAction="#onClickLogIn" prefHeight="25.0" prefWidth="181.0" text="Log In">
                      <HBox.margin>
                         <Insets left="10.0" />
                      </HBox.margin>
                   </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <CheckBox mnemonicParsing="false" prefHeight="17.0" prefWidth="127.0" text="Remember Me" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" />
+                  <Label prefHeight="17.0" prefWidth="96.0" text="Label" />
                </children>
             </HBox>
          </children>

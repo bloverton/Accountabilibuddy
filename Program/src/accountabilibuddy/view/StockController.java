@@ -1,5 +1,7 @@
 package accountabilibuddy.view;
 
-public class RootLayoutController {
+public class StockController {
+
+
 
 }
