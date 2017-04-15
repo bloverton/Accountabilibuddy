@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
@@ -11,27 +12,15 @@
          <children>
             <HBox alignment="CENTER_RIGHT">
                <children>
-                  <MenuBar>
-                    <menus>
-                      <Menu mnemonicParsing="false" text="File">
-                        <items>
-                          <MenuItem mnemonicParsing="false" text="Close" />
-                        </items>
-                      </Menu>
-                      <Menu mnemonicParsing="false" text="Edit">
-                        <items>
-                          <MenuItem mnemonicParsing="false" text="Delete" />
-                        </items>
-                      </Menu>
-                      <Menu mnemonicParsing="false" text="Help">
-                        <items>
-                          <MenuItem mnemonicParsing="false" text="About" />
-                        </items>
-                      </Menu>
-                    </menus>
-                  </MenuBar>
-                  <Pane prefHeight="200.0" prefWidth="200.0" />
-                  <TextField promptText="Search">
+                  <Pane prefHeight="25.0" prefWidth="307.0">
+                     <children>
+                        <Button fx:id="btnUsername" layoutX="27.0" mnemonicParsing="false" text="Username" />
+                        <Button fx:id="btnSaved" layoutX="96.0" mnemonicParsing="false" text="Saved" />
+                        <Button fx:id="btnOptionsHelp" layoutX="144.0" mnemonicParsing="false" text="Options/Help" />
+                        <ImageView fx:id="imgUser" fitHeight="27.0" fitWidth="27.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button fx:id="btnLogout" layoutX="231.0" mnemonicParsing="false" onAction="#onActionLogout" text="Log Out" />
+                     </children></Pane>
+                  <TextField fx:id="txtFieldSearch" onAction="#onActionSearch" promptText="Search">
                      <HBox.margin>
                         <Insets />
                      </HBox.margin>
