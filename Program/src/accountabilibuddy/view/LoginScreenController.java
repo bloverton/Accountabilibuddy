@@ -5,10 +5,7 @@ import accountabilibuddy.util.DatabaseConnection;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
@@ -48,12 +45,8 @@ public class LoginScreenController {
         stage.setResizable(true);
 
         //Places Stock Exchange View to center of Root Layout
-        AnchorPane stockExchange = FXMLLoader.load(getClass().getResource("StockExchangeView.fxml"));
+        TabPane stockExchange = FXMLLoader.load(getClass().getResource("StockIndexView.fxml"));
         root.setCenter(stockExchange);
-
-        Stock stock = YahooFinance.get("^IXIC");
-
-        stock.print();
     }
 
     @FXML

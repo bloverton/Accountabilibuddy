@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane prefHeight="350.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="accountabilibuddy.view.StockIndexController">
+  <tabs>
+    <Tab fx:id="NASDAQ" text="NASDAQ">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="256.0" prefWidth="334.0">
+               <children>
+                  <ListView fx:id="NASDAQStockList" prefHeight="350.0" prefWidth="600.0" />
+               </children>
+            </AnchorPane>
+      </content>
+    </Tab>
+    <Tab fx:id="DJI" text="Dow Jones">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ListView fx:id="DJIStockList" prefHeight="350.0" prefWidth="600.0" />
+               </children>
+            </AnchorPane>
+      </content>
+    </Tab>
+      <Tab fx:id="SP50" text="S&amp;P">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ListView fx:id="SP50StockList" prefHeight="350.0" prefWidth="600.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>
