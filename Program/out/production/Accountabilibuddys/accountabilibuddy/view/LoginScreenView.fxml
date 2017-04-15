@@ -65,7 +65,7 @@
                <children>
                   <CheckBox mnemonicParsing="false" prefHeight="17.0" prefWidth="127.0" text="Remember Me" />
                   <Pane prefHeight="200.0" prefWidth="200.0" />
-                  <Label prefHeight="17.0" prefWidth="96.0" text="Label" />
+                  <Label />
                </children>
             </HBox>
          </children>
