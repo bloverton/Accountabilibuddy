@@ -2,31 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a9d44d8-0ef3-4571-abdd-e889ee4931e7" name="Default" comment="Workspace update">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Program/src/accountabilibuddy/view/StockIndexView.fxml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Program/out/production/Accountabilibuddys/accountabilibuddy/model/Stock.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Program/out/production/Accountabilibuddys/accountabilibuddy/model/StockExchange.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Program/out/production/Accountabilibuddys/accountabilibuddy/util/ErrorLogger.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Program/out/production/Accountabilibuddys/accountabilibuddy/view/StockExchangeController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Program/out/production/Accountabilibuddys/accountabilibuddy/view/StockExchangeView.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Program/out/production/Accountabilibuddys/accountabilibuddy/view/StockView.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Program/src/accountabilibuddy/view/StockController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Program/src/accountabilibuddy/view/StockExchangeView.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Program/src/accountabilibuddy/view/StockView.fxml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Program/src/accountabilibuddy/view/StockExchangeController.java" afterPath="$PROJECT_DIR$/Program/src/accountabilibuddy/view/StockIndexController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Program/out/production/Accountabilibuddys/accountabilibuddy/Main.class" afterPath="$PROJECT_DIR$/Program/out/production/Accountabilibuddys/accountabilibuddy/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Program/out/production/Accountabilibuddys/accountabilibuddy/model/StockData.class" afterPath="$PROJECT_DIR$/Program/out/production/Accountabilibuddys/accountabilibuddy/model/StockData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Program/out/production/Accountabilibuddys/accountabilibuddy/model/StockMarketIndex.class" afterPath="$PROJECT_DIR$/Program/out/production/Accountabilibuddys/accountabilibuddy/model/StockMarketIndex.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Program/out/production/Accountabilibuddys/accountabilibuddy/view/LoginScreenController.class" afterPath="$PROJECT_DIR$/Program/out/production/Accountabilibuddys/accountabilibuddy/view/LoginScreenController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Program/out/production/Accountabilibuddys/accountabilibuddy/view/RootLayoutController.class" afterPath="$PROJECT_DIR$/Program/out/production/Accountabilibuddys/accountabilibuddy/view/RootLayoutController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Program/out/production/Accountabilibuddys/accountabilibuddy/view/StockIndexController.class" afterPath="$PROJECT_DIR$/Program/out/production/Accountabilibuddys/accountabilibuddy/view/StockIndexController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Program/out/production/Accountabilibuddys/accountabilibuddy/view/LoginScreenView.fxml" afterPath="$PROJECT_DIR$/Program/out/production/Accountabilibuddys/accountabilibuddy/view/LoginScreenView.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Program/out/production/Accountabilibuddys/accountabilibuddy/view/RootLayoutView.fxml" afterPath="$PROJECT_DIR$/Program/out/production/Accountabilibuddys/accountabilibuddy/view/RootLayoutView.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Program/src/accountabilibuddy/Main.java" afterPath="$PROJECT_DIR$/Program/src/accountabilibuddy/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Program/src/accountabilibuddy/model/StockData.java" afterPath="$PROJECT_DIR$/Program/src/accountabilibuddy/model/StockData.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Program/src/accountabilibuddy/model/StockMarketIndex.java" afterPath="$PROJECT_DIR$/Program/src/accountabilibuddy/model/StockMarketIndex.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Program/src/accountabilibuddy/view/LoginScreenController.java" afterPath="$PROJECT_DIR$/Program/src/accountabilibuddy/view/LoginScreenController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Program/src/accountabilibuddy/view/RootLayoutController.java" afterPath="$PROJECT_DIR$/Program/src/accountabilibuddy/view/RootLayoutController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Program/src/accountabilibuddy/view/RootLayoutView.fxml" afterPath="$PROJECT_DIR$/Program/src/accountabilibuddy/view/RootLayoutView.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Program/src/accountabilibuddy/view/StockIndexController.java" afterPath="$PROJECT_DIR$/Program/src/accountabilibuddy/view/StockIndexController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <ignored path="$PROJECT_DIR$/Program/out/" />
@@ -46,18 +26,28 @@
       <file leaf-file-name="StockMarketIndex.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Program/src/accountabilibuddy/model/StockMarketIndex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-175">
-              <caret line="30" column="36" lean-forward="true" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+            <state relative-caret-position="454">
+              <caret line="47" column="61" lean-forward="false" selection-start-line="47" selection-start-column="61" selection-end-line="47" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2055#2056#0" expanded="true" />
-                <element signature="e#2099#2100#0" expanded="true" />
+                <element signature="e#2149#2150#0" expanded="true" />
+                <element signature="e#2193#2194#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StockViewCell.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Program/src/accountabilibuddy/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="27" column="60" lean-forward="false" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StockViewCell.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Program/src/accountabilibuddy/view/StockViewCell.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="654">
@@ -69,22 +59,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DJI.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Program/res/DJI.txt">
+      <file leaf-file-name="DatabaseConnection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Program/src/accountabilibuddy/util/DatabaseConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SP50.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Program/res/SP50.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="646">
+              <caret line="40" column="69" lean-forward="false" selection-start-line="40" selection-start-column="69" selection-end-line="40" selection-end-column="69" />
+              <folding>
+                <marker date="1489824232179" expanded="true" signature="1535:1595" ph="INSERT INTO missingValue... " />
+                <marker date="1489824232179" expanded="true" signature="2539:2570" ph="SELECT missi... missingValue" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StockIndexController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StockIndexController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Program/src/accountabilibuddy/view/StockIndexController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="66" column="45" lean-forward="false" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
+            <state relative-caret-position="433">
+              <caret line="45" column="69" lean-forward="false" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -232,7 +215,6 @@
         <option value="$PROJECT_DIR$/Program/src/accountabilibuddy/view/LoginScreenView.fxml" />
         <option value="$PROJECT_DIR$/Program/src/accountabilibuddy/view/StockController.java" />
         <option value="$PROJECT_DIR$/Program/src/accountabilibuddy/model/NASDAQ.java" />
-        <option value="$PROJECT_DIR$/Program/src/accountabilibuddy/Main.java" />
         <option value="$PROJECT_DIR$/Program/src/accountabilibuddy/view/StockView.fxml" />
         <option value="$PROJECT_DIR$/Program/src/accountabilibuddy/view/StockExchangeController.java" />
         <option value="$PROJECT_DIR$/Program/src/accountabilibuddy/view/StockIndexView.fxml" />
@@ -240,12 +222,13 @@
         <option value="$PROJECT_DIR$/Program/src/accountabilibuddy/view/RootLayoutView.fxml" />
         <option value="$PROJECT_DIR$/Program/src/accountabilibuddy/view/RootLayoutController.java" />
         <option value="$PROJECT_DIR$/Program/res/NASDAQ.txt" />
-        <option value="$PROJECT_DIR$/Program/src/accountabilibuddy/model/StockMarketIndex.java" />
-        <option value="$PROJECT_DIR$/Program/src/accountabilibuddy/view/StockIndexController.java" />
         <option value="$PROJECT_DIR$/Program/src/accountabilibuddy/view/ViewCell.fxml" />
         <option value="$PROJECT_DIR$/Program/src/accountabilibuddy/model/StockDisplay.java" />
         <option value="$PROJECT_DIR$/Program/src/accountabilibuddy/model/StockData.java" />
         <option value="$PROJECT_DIR$/Program/src/accountabilibuddy/view/StockViewCell.java" />
+        <option value="$PROJECT_DIR$/Program/src/accountabilibuddy/model/StockMarketIndex.java" />
+        <option value="$PROJECT_DIR$/Program/src/accountabilibuddy/Main.java" />
+        <option value="$PROJECT_DIR$/Program/src/accountabilibuddy/view/StockIndexController.java" />
       </list>
     </option>
   </component>
@@ -793,7 +776,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -804,13 +787,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2653277" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2653277" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21041666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21041666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -926,17 +909,6 @@
     <entry file="file://$PROJECT_DIR$/Program/src/accountabilibuddy/view/StockView" />
     <entry file="file://$PROJECT_DIR$/Program/src/accountabilibuddy/util/ErrorLogger.java" />
     <entry file="file://$PROJECT_DIR$/Program/src/accountabilibuddy/model/NASDAQ.java" />
-    <entry file="file://$PROJECT_DIR$/Program/src/accountabilibuddy/util/DatabaseConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="40" column="69" lean-forward="false" selection-start-line="40" selection-start-column="69" selection-end-line="40" selection-end-column="69" />
-          <folding>
-            <marker date="1489824232179" expanded="true" signature="1535:1595" ph="INSERT INTO missingValue... " />
-            <marker date="1489824232179" expanded="true" signature="2539:2570" ph="SELECT missi... missingValue" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Program/src/accountabilibuddy/util/CalculationUtilities.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1004,18 +976,6 @@
         <state relative-caret-position="213">
           <caret line="1966" column="0" lean-forward="false" selection-start-line="1966" selection-start-column="0" selection-end-line="1966" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Program/src/accountabilibuddy/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#951#952#0" expanded="false" />
-            <element signature="e#1004#1005#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1089,29 +1049,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Program/src/accountabilibuddy/view/RootLayoutView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="162" lean-forward="false" selection-start-line="8" selection-start-column="162" selection-end-line="8" selection-end-column="162" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Program/src/accountabilibuddy/view/RootLayoutController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="32" column="54" lean-forward="false" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Program/src/accountabilibuddy/view/StockIndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="66" column="45" lean-forward="false" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -1139,18 +1080,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Program/src/accountabilibuddy/model/StockMarketIndex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-175">
-          <caret line="30" column="36" lean-forward="true" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2055#2056#0" expanded="true" />
-            <element signature="e#2099#2100#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Program/src/accountabilibuddy/view/ViewCell.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -1169,6 +1098,56 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Program/src/accountabilibuddy/view/RootLayoutView.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="162" lean-forward="false" selection-start-line="8" selection-start-column="162" selection-end-line="8" selection-end-column="162" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Program/src/accountabilibuddy/model/StockMarketIndex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="47" column="61" lean-forward="false" selection-start-line="47" selection-start-column="61" selection-end-line="47" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2149#2150#0" expanded="true" />
+            <element signature="e#2193#2194#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Program/src/accountabilibuddy/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="27" column="60" lean-forward="false" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Program/src/accountabilibuddy/util/DatabaseConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="40" column="69" lean-forward="false" selection-start-line="40" selection-start-column="69" selection-end-line="40" selection-end-column="69" />
+          <folding>
+            <marker date="1489824232179" expanded="true" signature="1535:1595" ph="INSERT INTO missingValue... " />
+            <marker date="1489824232179" expanded="true" signature="2539:2570" ph="SELECT missi... missingValue" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Program/src/accountabilibuddy/view/StockIndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="45" column="69" lean-forward="false" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
+          <folding />
         </state>
       </provider>
     </entry>

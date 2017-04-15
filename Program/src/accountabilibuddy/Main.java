@@ -11,6 +11,7 @@ import javafx.stage.Stage;
 import yahoofinance.Stock;
 import yahoofinance.YahooFinance;
 
+import java.io.File;
 import java.io.IOException;
 
 public class Main extends Application{

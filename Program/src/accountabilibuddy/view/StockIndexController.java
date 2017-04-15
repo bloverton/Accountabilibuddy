@@ -41,9 +41,9 @@ public class StockIndexController implements Initializable{
     private ObservableList<StockData> DJIStockData = FXCollections.observableArrayList();
 
     public StockIndexController() throws IOException {
-        StockMarketIndex NASDAQ = new StockMarketIndex("NASDAQ", "C:\\Users\\overt\\IdeaProjects\\Accountabilibuddy\\Program\\res\\NASDAQ.txt", 1);
-        StockMarketIndex SP50 = (new StockMarketIndex("SP50", "C:\\Users\\overt\\IdeaProjects\\Accountabilibuddy\\Program\\res\\SP50.txt", 1));
-        StockMarketIndex DJI = (new StockMarketIndex("DJI", "C:\\Users\\overt\\IdeaProjects\\Accountabilibuddy\\Program\\res\\DJI.txt", 1));
+        StockMarketIndex NASDAQ = new StockMarketIndex("NASDAQ", "/Program/res/NASDAQ.txt", 1);
+        StockMarketIndex SP50 = (new StockMarketIndex("SP50", "/Program/res/SP50.txt", 1));
+        StockMarketIndex DJI = (new StockMarketIndex("DJI", "/Program/res/DJI.txt", 1));
 
         transferContents(NASDAQ, NASDAQStockData);
         transferContents(SP50, SP50StockData);

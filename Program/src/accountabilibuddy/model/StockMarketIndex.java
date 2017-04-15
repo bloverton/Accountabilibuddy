@@ -5,6 +5,7 @@ import javafx.beans.property.StringProperty;
 import yahoofinance.Stock;
 import yahoofinance.YahooFinance;
 
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.BufferedReader;
@@ -44,7 +45,8 @@ public class StockMarketIndex extends StockDisplay{
         StockData stock;
         BufferedReader br = null;
         try {
-            br = new BufferedReader(new FileReader(stockIndexTxtURL));
+            String filePath = new File("").getAbsolutePath();
+            br = new BufferedReader(new FileReader(filePath + stockIndexTxtURL));
             String line;
             int index = 0;
             while ((line = br.readLine()) != null) {
