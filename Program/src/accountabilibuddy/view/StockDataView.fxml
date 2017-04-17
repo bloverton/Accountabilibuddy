@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="accountabilibuddy.view.StockDataController">
+   <children>
+      <TabPane layoutX="23.0" layoutY="194.0" prefHeight="192.0" prefWidth="543.0">
+         <tabs>
+            <Tab fx:id="tabOneDay" closable="false" text="1 Day">
+               <content>
+                  <LineChart fx:id="lineChartOneDay" layoutX="92.0" layoutY="157.0" prefHeight="229.0" prefWidth="388.0">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </LineChart>
+               </content>
+            </Tab>
+            <Tab fx:id="tabOneWeek" closable="false" text="1 Week">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <LineChart fx:id="lineChartOneWeek" layoutX="7.0" layoutY="-118.0" prefHeight="163.0" prefWidth="543.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="tabOneMonth" closable="false" text="1 Month">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <LineChart fx:id="lineChartOneMonth" layoutX="-75.0" layoutY="-144.0" prefHeight="163.0" prefWidth="543.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="tabThreeMonth" closable="false" text="3 Month">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <LineChart fx:id="lineChartThreeMonth" layoutX="-78.0" layoutY="-132.0" prefHeight="163.0" prefWidth="543.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="TabSixMonth" closable="false" text="6 Month">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <LineChart fx:id="lineChartSixMonth" layoutX="-16.0" layoutY="-118.0" prefHeight="163.0" prefWidth="543.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="tabOneYear" closable="false" text="1 Year">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <LineChart fx:id="lineChartOneYear" layoutX="-24.0" layoutY="-81.0" prefHeight="163.0" prefWidth="543.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <VBox layoutX="23.0" layoutY="40.0" prefHeight="140.0" prefWidth="286.0">
+         <children>
+            <Label fx:id="lblStockName" text="lblStockName">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+            <HBox prefHeight="59.0" prefWidth="286.0">
+               <children>
+                  <Label fx:id="lblStockIndex" text="lblStockIndex">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="lblStockSymbol" text="lblStockSymbol">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="lblStockPrice" text="lblStockPrice">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+                  <Label fx:id="lblCurrency" text="lblCurrency">
+                     <font>
+                        <Font size="13.0" />
+                     </font></Label>
+                  <Label fx:id="lblPercentageChange" text="lblPercentageChange">
+                     <font>
+                        <Font size="13.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="350.0" layoutY="36.0" prefHeight="114.0" prefWidth="218.0">
+         <children>
+            <Label fx:id="lblInvestBoolean" text="lblInvestBoolean">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Label>
+            <Label fx:id="lblInvestDescription" text="lblInvestDescription">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+         </children>
+      </VBox>
+      <Button fx:id="btnBack" layoutX="23.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClickBack" text="Back" />
+   </children>
+</AnchorPane>
