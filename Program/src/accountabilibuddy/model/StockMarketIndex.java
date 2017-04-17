@@ -20,6 +20,7 @@ public class StockMarketIndex extends StockDisplay{
     private HashMap<String, StockData> topStocks;
     private String[] stockKeys;
     private String stockIndexTxtURL;
+    private String stockIndexName;
     /**
      * Constructor: Initializes the stock exchange name and the list of stocks
      * @param stockIndexName: Name of the stock index
@@ -27,6 +28,7 @@ public class StockMarketIndex extends StockDisplay{
      */
     public StockMarketIndex(String stockIndexName, String stockIndexTxtURL ,int stockIndexPrice){
         super(stockIndexName, stockIndexPrice);
+        this.stockIndexName = stockIndexName;
         this.stockIndexTxtURL = stockIndexTxtURL;
         topStocks = new HashMap<>(200);
         stockKeys = new String[200];
@@ -51,6 +53,7 @@ public class StockMarketIndex extends StockDisplay{
             int index = 0;
             while ((line = br.readLine()) != null) {
                 stock = new StockData(line);
+                stock.setStockIndex(stockIndexName);
                 stockKeys[index] = line;
                 topStocks.put(line, stock);
                 index++;

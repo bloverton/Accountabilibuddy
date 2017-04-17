@@ -2,16 +2,13 @@ package accountabilibuddy.view;
 
 import accountabilibuddy.util.DatabaseConnection;
 
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-
-import yahoofinance.Stock;
-import yahoofinance.YahooFinance;
 
 import java.io.IOException;
 
@@ -29,24 +26,26 @@ public class LoginScreenController {
     @FXML
     private Label statusLabel;
 
+    @FXML
+    private ProgressIndicator progressIndicator;
+
     private Stage stage;
+
+    public LoginScreenController(){
+        progressIndicator = new ProgressIndicator();
+        progressIndicator.setVisible(false);
+    }
 
     //Test method just to swap scenes and stages
     @FXML
     private void onClickLogIn() throws IOException{
+        progressIndicator.setVisible(true);
         //Check for correct username and password in database
+        statusLabel.setText("Attempting to log in");
 
         //Load new Stage and root layout scene first
-        stage = (Stage)btnLogIn.getScene().getWindow();
-        BorderPane root;
-        root = FXMLLoader.load(getClass().getResource("RootLayoutView.fxml"));
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.setResizable(true);
-
-        //Places Stock Exchange View to center of Root Layout
-        TabPane stockExchange = FXMLLoader.load(getClass().getResource("StockIndexView.fxml"));
-        root.setCenter(stockExchange);
+        statusLabel.setText("Setting up personal user layout");
+        Platform.runLater(() -> setUpLayoutScene());
     }
 
     @FXML
@@ -61,6 +60,21 @@ public class LoginScreenController {
         }else{
             statusLabel.setText("That username has been taken already");
         }
+    }
+
+    private void setUpLayoutScene(){
+        try {
+            TabPane stockExchange = FXMLLoader.load(getClass().getResource("StockIndexView.fxml"));
+            stage = (Stage) btnLogIn.getScene().getWindow();
+            BorderPane root;
+            root = FXMLLoader.load(getClass().getResource("RootLayoutView.fxml"));
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setResizable(true);
+
+            //Places Stock Exchange View to center of Root Layout
+            root.setCenter(stockExchange);
+        }catch(IOException error){error.printStackTrace();}
     }
 
 }

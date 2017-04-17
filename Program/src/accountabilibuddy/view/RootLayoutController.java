@@ -48,5 +48,4 @@ public class RootLayoutController {
         stage.setScene(scene);
         stage.setResizable(true);
     }
-
 }

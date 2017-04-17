@@ -19,15 +19,6 @@ import java.util.ResourceBundle;
 public class StockIndexController implements Initializable{
 
     @FXML
-    private Tab NASDAQ;
-
-    @FXML
-    private Tab DJI;
-
-    @FXML
-    private Tab SP50;
-
-    @FXML
     private ListView<StockData> NASDAQStockList;
 
     @FXML
@@ -40,16 +31,23 @@ public class StockIndexController implements Initializable{
     private ObservableList<StockData> SP50StockData = FXCollections.observableArrayList();
     private ObservableList<StockData> DJIStockData = FXCollections.observableArrayList();
 
+    /**
+     * Controller Constructor
+     * @throws IOException
+     */
     public StockIndexController() throws IOException {
         StockMarketIndex NASDAQ = new StockMarketIndex("NASDAQ", "/Program/res/NASDAQ.txt", 1);
-        StockMarketIndex SP50 = (new StockMarketIndex("SP50", "/Program/res/SP50.txt", 1));
-        StockMarketIndex DJI = (new StockMarketIndex("DJI", "/Program/res/DJI.txt", 1));
+        StockMarketIndex SP50 = new StockMarketIndex("SP50", "/Program/res/SP50.txt", 1);
+        StockMarketIndex DJI = new StockMarketIndex("DJI", "/Program/res/DJI.txt", 1);
 
         transferContents(NASDAQ, NASDAQStockData);
         transferContents(SP50, SP50StockData);
         transferContents(DJI, DJIStockData);
     }
 
+    /**
+     Is called when the controller is initialized
+     */
     public void initialize(URL location, ResourceBundle resources){
         NASDAQStockList.setItems(NASDAQStockData);
         SP50StockList.setItems(SP50StockData);
@@ -60,7 +58,12 @@ public class StockIndexController implements Initializable{
         DJIStockList.setCellFactory(DJIStockDataView -> new StockViewCell());
     }
 
-    public void transferContents(StockMarketIndex source, ObservableList<StockData> target){
+    /**
+     * Tranfers data from StockMarketIndex to ObservableList for Callback
+     * @param source
+     * @param target
+     */
+    private void transferContents(StockMarketIndex source, ObservableList<StockData> target){
         int i = 0;
         String[] keys = source.getStockKeys();
         while(source.getStock(keys[i++]) != null){

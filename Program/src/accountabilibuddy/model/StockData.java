@@ -10,6 +10,7 @@ import yahoofinance.histquotes.HistoricalQuote;
 import yahoofinance.histquotes.Interval;
 
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.Calendar;
 import java.util.List;
 
@@ -18,11 +19,14 @@ import java.util.List;
  */
 public class StockData extends StockDisplay{
 
+    //Make this change when implementing options menu
+    public static String Currency = "USD";
+
+    private String stockIndex;
     private Stock stock;
     private String stockSymbol;
 
     private int predictabilityWeight;
-
     private int betaValue;
     private int priceEarningsRatio;
     private int annualYield;
@@ -34,19 +38,15 @@ public class StockData extends StockDisplay{
      * @param stockName: The name of the stock (Case Sensitive)
      * @throws IOException: Handles Yahoo Finance exception
      */
-    public StockData(String stockName, int stockCurrentPrice) throws IOException{
-
-        super(stockName, stockCurrentPrice);
-        this.stock = YahooFinance.get(stockName);
-        this.stockSymbol = stockName;
-        updateStockInfo();
-    }
-
     public StockData(String stockName) throws IOException{
         super(stockName);
         this.stock = YahooFinance.get(stockName);
         this.stockSymbol = stockName;
         updateStockInfo();
+    }
+
+    public void setStockIndex(String stockIndex){
+        this.stockIndex = stockIndex;
     }
 
     /**
@@ -170,9 +170,13 @@ public class StockData extends StockDisplay{
         return this.stock;
     }
 
+    public String getStockIndex(){return this.stockIndex;}
+
     public String getStockSymbol(){ return this.stockSymbol; }
 
     public String getStockName(){ return this.stock.getName(); }
 
     public double getStockPrice(){ return this.stock.getQuote().getPrice().doubleValue(); }
+
+    public double getStockChange(){ return stock.getQuote().getPrice().doubleValue() - stock.getQuote().getPreviousClose().doubleValue(); }
 }

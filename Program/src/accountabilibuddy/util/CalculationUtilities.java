@@ -1,5 +1,10 @@
 package accountabilibuddy.util;
 
+import yahoofinance.Stock;
+import yahoofinance.YahooFinance;
+
+import java.io.IOException;
+
 /**
  * Created by overt on 3/17/2017.
  */
@@ -80,8 +85,7 @@ public class CalculationUtilities {
      * @param secondaryPrice: The price of the stock on the next day
      * @return Percentage of the daily change
      */
-    public static double dailyPercentChange(double primaryPrice, double secondaryPrice){
+    public static double dailyStockPercentChange(double primaryPrice, double secondaryPrice){
         return (primaryPrice - secondaryPrice) / primaryPrice * 100;
     }
-
 }
