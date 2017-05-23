@@ -4,13 +4,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<TabPane prefHeight="350.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="accountabilibuddy.view.StockIndexController">
+<TabPane fx:id="globalTabPane" prefHeight="500.0" prefWidth="799.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="accountabilibuddy.view.StockIndexController">
   <tabs>
     <Tab fx:id="NASDAQ" text="NASDAQ">
       <content>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="256.0" prefWidth="334.0">
                <children>
-                  <ListView fx:id="NASDAQStockList" prefHeight="350.0" prefWidth="600.0" />
+                  <ListView fx:id="NASDAQStockList" prefHeight="471.0" prefWidth="799.0" />
                </children>
             </AnchorPane>
       </content>
@@ -31,6 +31,14 @@
                   <ListView fx:id="SP50StockList" prefHeight="350.0" prefWidth="600.0" />
                </children>
             </AnchorPane>
+        </content>
+      </Tab>
+      <Tab fx:id="favoriteStocks" closable="false" text="Fav">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ListView fx:id="userFavoriteStockList" layoutX="20.0" layoutY="61.0" prefHeight="321.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children></AnchorPane>
         </content>
       </Tab>
   </tabs>

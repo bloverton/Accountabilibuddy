@@ -1,18 +1,17 @@
 package accountabilibuddy;
 
-import accountabilibuddy.model.*;
+import yahoofinance.*;
+
 import javafx.application.Application;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import yahoofinance.Stock;
-import yahoofinance.YahooFinance;
+import yahoofinance.histquotes.HistoricalQuote;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 public class Main extends Application{
 
@@ -20,10 +19,6 @@ public class Main extends Application{
     private Stage currentStage;
 
     private Parent root;
-
-    public Main(){
-
-    }
 
     public static void main(String[] args) throws Exception{
         launch(args);

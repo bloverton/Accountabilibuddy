@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="309.0" prefWidth="378.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="309.0" prefWidth="378.0">
+         <children>
+            <TextField editable="false" prefHeight="74.0" prefWidth="378.0" text="Options/Help">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <TextArea editable="false" prefHeight="252.0" prefWidth="378.0" text="How To Use:&#10;&#10;Viewing Stocks:&#10;Navigate through stock indeces using the tabs provided&#10;above. Find the stock you want or search for it directly &#10;using the search bar.&#10;&#10;Saving Stocks:&#10;Save stoks for future reference by clicking the star icon.&#10;You can view your saved stocks by clicking the &quot;Saved&quot; &#10;link in the toolbar." />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

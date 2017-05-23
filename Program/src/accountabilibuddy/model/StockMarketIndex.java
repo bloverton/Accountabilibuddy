@@ -1,16 +1,10 @@
 package accountabilibuddy.model;
 
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
-import yahoofinance.Stock;
-import yahoofinance.YahooFinance;
-
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.BufferedReader;
 import java.util.HashMap;
-import java.util.HashSet;
 
 /**
  * Created on 2/21/2017.
@@ -26,8 +20,8 @@ public class StockMarketIndex extends StockDisplay{
      * @param stockIndexName: Name of the stock index
      *                              Used for comparing stocks to stock market index
      */
-    public StockMarketIndex(String stockIndexName, String stockIndexTxtURL ,int stockIndexPrice){
-        super(stockIndexName, stockIndexPrice);
+    public StockMarketIndex(String stockIndexName, String stockIndexTxtURL){
+        super(stockIndexName);
         this.stockIndexName = stockIndexName;
         this.stockIndexTxtURL = stockIndexTxtURL;
         topStocks = new HashMap<>(200);
@@ -37,13 +31,15 @@ public class StockMarketIndex extends StockDisplay{
 
     public StockMarketIndex(String stockIndexName){
         super(stockIndexName);
+        this.stockIndexName = stockIndexName;
         topStocks = new HashMap<>(200);
+        stockKeys = new String[200];
     }
 
     /**
      * Adds stocks to the stockIndex
      */
-    private void addStocks(){
+    public void addStocks(){
         StockData stock;
         BufferedReader br = null;
         try {
@@ -66,11 +62,12 @@ public class StockMarketIndex extends StockDisplay{
             System.out.println("An error has occurred");
         }
     }
-    public StockData getStock(String key){ return topStocks.get(key); }
 
-    public int getSize(){
-        return this.topStocks.size();
+    public void addStocks(String stockIndexName){
+
     }
+
+    public StockData getStock(String key){ return topStocks.get(key); }
 
     public String[] getStockKeys(){return this.stockKeys;}
 
