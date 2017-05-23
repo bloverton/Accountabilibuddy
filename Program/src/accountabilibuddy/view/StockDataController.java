@@ -12,6 +12,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import yahoofinance.Stock;
+import yahoofinance.YahooFinance;
 
 import java.io.IOException;
 import java.text.DecimalFormat;
@@ -20,9 +21,6 @@ import java.text.DecimalFormat;
  * Created by overt on 4/15/2017.
  */
 public class StockDataController {
-
-    @FXML
-    private Button btnBack;
 
     @FXML
     private Label lblStockName;
@@ -48,25 +46,17 @@ public class StockDataController {
     @FXML
     private Label lblInvestDescription;
 
+    @FXML
+    private Label lblAnnualYield;
+
+    @FXML
+    private Label lblPERatio;
+
     private Stage stage;
 
     private DecimalFormat df2 = new DecimalFormat("#0.00");
 
-    @FXML
-    private void onClickBack() throws IOException {
-        stage = (Stage)btnBack.getScene().getWindow();
-        BorderPane root;
-        root = FXMLLoader.load(getClass().getResource("RootLayoutView.fxml"));
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.setResizable(true);
-
-        //Places Stock Exchange View to center of Root Layout
-        TabPane stockExchange = FXMLLoader.load(getClass().getResource("StockIndexView.fxml"));
-        root.setCenter(stockExchange);
-    }
-
-    public void initData(StockData stockData){
+    public void initData(StockData stockData) throws IOException{
         double stockChange = stockData.getStockChange();
         double stockPercentChange = stockChange / stockData.getStockPrice() * 100;
 
@@ -75,6 +65,32 @@ public class StockDataController {
         lblStockPrice.setText(String.valueOf(df2.format(stockData.getStockPrice())));
         lblCurrency.setText(StockData.Currency);
         lblStockIndex.setText(stockData.getStockIndex() + ": ");
+        lblInvestDescription.setText(stockData.getInvestmentMSG());
+        lblInvestDescription.setWrapText(true);
+        lblAnnualYield.setText(String.valueOf(stockData.getAnnualYield()));
+        lblPERatio.setText(String.valueOf(stockData.getPriceEarningsRatio()));
+        if(stockData.getStockIndex() == null) {
+            String name = stockData.getStockSymbol();
+            //Stock stock = YahooFinance.get("AAPL");
+            Stock stock = YahooFinance.get(name);
+            String stocks = stock.getStockExchange();
+            //stock.print();
+            lblStockIndex.setText(stocks + ": ");
+        }
+        else {
+            lblStockIndex.setText(stockData.getStockIndex() + ": ");
+        }
+
+
+        if(stockData.getIsGoodInvestment()) {
+            lblInvestBoolean.setText("INVEST");
+            lblInvestBoolean.setTextFill(Color.web("#008000"));
+        }
+        else {
+            lblInvestBoolean.setText("DO NOT INVEST");
+            lblInvestBoolean.setTextFill(Color.web("#ff0000"));
+        }
+
 
         if(stockChange > 0) {
             lblPercentageChange.setText("\t" + String.valueOf(df2.format(stockChange) + " (" + df2.format(stockPercentChange) + "%)"));
@@ -86,5 +102,4 @@ public class StockDataController {
             lblPercentageChange.setTextFill(Color.web("#ff0000"));
         }
     }
-
 }

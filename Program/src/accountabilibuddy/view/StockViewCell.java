@@ -1,17 +1,18 @@
 package accountabilibuddy.view;
 
 import accountabilibuddy.model.StockData;
-import accountabilibuddy.util.CalculationUtilities;
+import accountabilibuddy.util.Serialization;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListCell;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-import java.io.IOException;
+import java.io.*;
 import java.text.DecimalFormat;
 
 /**
@@ -36,6 +37,9 @@ public class StockViewCell extends ListCell<StockData> {
 
     @FXML
     private AnchorPane anchorPane;
+
+    @FXML
+    private CheckBox chkboxSave;
 
     private StockData stockData;
 
@@ -98,10 +102,34 @@ public class StockViewCell extends ListCell<StockData> {
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("StockDataView.fxml"));
         Stage stage = new Stage();
-        stage.setScene(new Scene((AnchorPane) loader.load()));
-        StockDataController controller = loader.<StockDataController>getController();
+        stage.setScene(new Scene(loader.load()));
+        StockDataController controller = loader.getController();
         controller.initData(stockData);
         stage.show();
+    }
+
+    @FXML
+    private void onActionSave() throws IOException{
+        //Finds saved.txt
+        String stockSymbol = stockData.getStockSymbol();
+        String savedStockLocation = Serialization.FILE_PATH + "/Program/res/saved.txt";
+        BufferedReader checkStockSymbol = new BufferedReader(new FileReader(savedStockLocation));
+
+        //Checks if the stock symbol exists in saved.txt
+        //If true, return;
+        String txtStockSymbol;
+        while((txtStockSymbol = checkStockSymbol.readLine()) != null){
+            if(txtStockSymbol.equalsIgnoreCase(stockSymbol)) {
+                return;
+            }
+        }
+
+        //Add to saved.txt
+        FileWriter saveStock = new FileWriter(savedStockLocation, true);
+        BufferedWriter addstock = new BufferedWriter(saveStock);
+        addstock.write(stockSymbol);
+        addstock.newLine();
+        addstock.close();
     }
 
 }

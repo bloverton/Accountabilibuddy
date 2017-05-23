@@ -22,13 +22,5 @@ public class StockDisplay {
     public String getStockName(){
         return this.stockName.getName();
     }
-
-    /*
-    public double getStockPrice(){
-        if(this.stockPrice == null)
-            return 0;
-        return this.stockPrice.doubleValue();
-    }
-    */
 }
 

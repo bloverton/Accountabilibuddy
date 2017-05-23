@@ -11,7 +11,6 @@
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="KotlinJavaRuntime" level="project" />
-    <orderEntry type="library" exported="" name="sqlite-jdbc-3.16.1" level="application" />
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
@@ -23,6 +22,15 @@
         <SOURCES>
           <root url="jar://$MODULE_DIR$/Program/jars/YahooFinanceAPI-3.6.0-sources.jar!/" />
         </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/postgresql-42.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
       </library>
     </orderEntry>
   </component>
